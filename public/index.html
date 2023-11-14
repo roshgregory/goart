@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Minting and Display</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+</head>
+<body>
+    <h1>NFT Minting and Display</h1>
+
+    <!-- Connect Wallet Button -->
+    <button id="connectWallet">Connect Wallet</button>
+
+    <!-- Minting Form -->
+    <form id="mintForm">
+        <label for="tokenId">Token ID:</label>
+        <input type="number" id="tokenId" name="tokenId" required>
+
+        <label for="recipientAddress">Recipient Address (optional):</label>
+        <input type="text" id="recipientAddress" name="recipientAddress" placeholder="0x...">
+
+        <button type="submit">Mint NFT</button>
+    </form>
+
+    <!-- NFT Display Section -->
+    <div id="nftDisplay"></div>
+
+    <!-- App Script -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
